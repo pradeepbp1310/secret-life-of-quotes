@@ -1,0 +1,23 @@
+<div class="blockquote-wrapper">
+    <div class="blockquote">
+        <div class="gotoFav"><a routerLink="/favourites">Go to <span>favourites</span> &rarr;</a>
+        </div>
+        <!-- <h1>
+       Intuitive design happens when <span style="color:#ffffff">current knowledge</span> is the same as the <span style="color:#ffffff">target knowledge.</span>
+       </h1> -->
+        <h1>{{quote.quote}}</h1>
+        <h4>&mdash;{{quote.author}}</h4>
+        <div class="flex">
+            <div (click)="generateQuote()" class="refresh">
+                <img src="../assets/refresh.png" title="One more quote!" alt="refresh" />
+                <br />
+                <span>One more!</span>
+            </div>
+            <div (click)="addToFavourites()" class="fav">
+                <img src="../assets/heart.png" title="One more quote!" alt="refresh" />
+                <br />
+                <span>Add to favourite</span>
+            </div>
+        </div>
+    </div>
+</div>

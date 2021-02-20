@@ -1,0 +1,51 @@
+.favourites {
+    margin: 80px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            color: #ffffff;
+            border: 2px solid #e74848;
+            border-radius: 4px;
+            padding: 24px;
+            font-size: 24px;
+            margin-bottom: 16px;
+            max-width: 640px;
+            margin: 16px auto;
+
+            span {
+                color: #e74848
+            }
+        }
+    }
+}
+
+.noFav {
+    font-size: 34px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.gotoHome {
+    margin-bottom: 16px;
+    text-align: center;
+
+    a {
+        font-size: 24px;
+        text-decoration: none;
+        color: #e74848
+    }
+
+    span {
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .favourites {
+        margin: 8px
+    }
+}

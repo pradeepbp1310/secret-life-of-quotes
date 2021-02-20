@@ -1,0 +1,10 @@
+<div class="favourites">
+    <div class="gotoHome"><a routerLink="/">&larr; Go <span>back</span></a>
+    </div>
+    <ul>
+        <li *ngFor="let fav of favouriteQuotes">
+            {{ fav.quote}} <span>&mdash;{{fav.author}}</span>
+        </li>
+    </ul>
+</div>
+<div *ngIf="!favouriteQuotes.length" class="noFav">No favourites found</div>
